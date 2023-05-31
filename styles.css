@@ -1,0 +1,125 @@
+* {
+    font-family: "Europa";
+    background-color: #DADBDD;
+    line-height: 1.5;
+    margin: 0;
+    text-decoration: none;
+}
+
+.intro {
+    padding-top: 20%;
+    padding-left: 15%;
+    padding-right: 20%;
+    font-size: xx-large;
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px 0;
+    grid-auto-rows: minmax(120px auto);
+}
+
+.LHS-grid {
+    text-align: end;
+    /* background-color: red; */
+    font-size: xx-large;
+}
+
+/* .RHS-grid {
+    width: 75%;
+} */
+
+.exp-company, .exp-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-role {
+    padding-bottom: 20px;
+}
+
+.exp-container {
+    /* background-color: aqua; */
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: x-large;
+}
+
+.skills-container {
+    /* background-color: plum; */
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    font-size: x-large;
+    /* width: 100%; */
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list {
+    font-size: larger;
+}
+
+.findme-container {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.findme-title {
+    text-align: end;
+}
+
+.copyright {
+    font-size: larger;
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 10px;
+}
+
+/* .skills-title {
+    min-height: 100px;
+    text-align: end;
+}
+
+.skills-languages {
+    min-height: 300px;
+}
+
+/* .skills-frameworks {
+    min-height: 300px;
+}
+
+.skills-tools {
+    min-height: 300px;
+} */
+
+
+/* .findme {
+    text-align: end;
+    font-size: x-large;
+    gap: 100px 0;
+    padding: 100px;
+} */
+
+/* .socials{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    width: 75%;
+    background-color: brown;
+} */
