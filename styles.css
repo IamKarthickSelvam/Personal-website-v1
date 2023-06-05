@@ -1,7 +1,7 @@
 * {
     font-family: 'Epilogue', sans-serif;
     /* background-color: #DADBDD; */
-    background: #444444;
+    background: #7D7D7D;
     /* color: white; */
     line-height: 1.5;
     margin: 0;
@@ -11,12 +11,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;700&display=swap');
 
 .intro {
+    
+    /* min-height: 100vh; */
+    /* min-width: 100vw; */
+    color: white;
+    /* max-width: 100%; */
+    /* margin-bottom: 0%; */
+}
+
+.intro-content {
     margin-top: 10%;
     padding: 0% 20% 0% 20%;
     font-size: xx-large;
-    min-height: 100vh;
-    color: white;
-    /* margin-bottom: 0%; */
 }
 
 body {
@@ -25,7 +31,8 @@ body {
 
 h1 {
     font-weight: lighter;
-    margin-bottom: 200px;
+    margin-bottom: 2em;
+    /* font-size: clamp(1em, 5rem, 4rem); */
 }
 
 h3 {
@@ -40,7 +47,7 @@ strong {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 200px 0;
+    gap: 30px 0;
     grid-auto-rows: auto;
 }
 
@@ -60,10 +67,12 @@ strong {
 .exp-time {
     display: flex;
     justify-content: space-between;
+    font-size: large;
 }
 
 .exp-role {
     padding-bottom: 20px;
+    font-size: large;
 }
 
 .exp-container {
@@ -82,14 +91,22 @@ strong {
     margin-right: 30%;
     display: flex;
     justify-content: space-between;
-    /* gap: 20%; */
+    gap: 1rem;
     font-size: larger;
-    flex-basis: auto;
-    /* width: 100%; */
+    flex-basis: 2;
+    max-width: 100%;
 }
 
 .skills-languages, .skills-frameworks, .skills-tools {
     letter-spacing: 4px;
+}
+
+.LHS-grid h3 {
+    font-size: large;
+}
+
+.RHS-grid h3 {
+    font-size: large;
 }
 
 ul {
@@ -98,7 +115,7 @@ ul {
 }
 
 .list {
-    font-size: larger;
+    /* font-size: larger; */
     letter-spacing: 0;
 }
 
@@ -127,6 +144,10 @@ a {
     text-align: end;
 }
 
+.email, .linkedin, .github, a{
+    font-size: large;
+}
+
 .copyright {
     font-size: large;
     text-align: center;
@@ -146,37 +167,3 @@ a {
     justify-content: center;
     gap: 50px;
 }
-
-/* .skills-title {
-    min-height: 100px;
-    text-align: end;
-}
-
-.skills-languages {
-    min-height: 300px;
-}
-
-/* .skills-frameworks {
-    min-height: 300px;
-}
-
-.skills-tools {
-    min-height: 300px;
-} */
-
-
-/* .findme {
-    text-align: end;
-    font-size: x-large;
-    gap: 100px 0;
-    padding: 100px;
-} */
-
-/* .socials{
-    margin-left: 10%;
-    display: flex;
-    justify-content: space-between;
-    font-size: x-large;
-    width: 75%;
-    background-color: brown;
-} */
