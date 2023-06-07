@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;700&display=swap');
+
 * {
     font-family: 'Epilogue', sans-serif;
     /* background-color: #DADBDD; */
@@ -8,21 +10,20 @@
     text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;700&display=swap');
-
 .intro {
-    
-    /* min-height: 100vh; */
-    /* min-width: 100vw; */
+    min-height: 100vh;
     color: white;
-    /* max-width: 100%; */
-    /* margin-bottom: 0%; */
 }
 
 .intro-content {
-    margin-top: 10%;
-    padding: 0% 20% 0% 20%;
+    /* margin-top: 10%; */
+    padding: 10% 20% 0% 20%;
     font-size: xx-large;
+}
+
+.intro-content p {
+    font-weight: normal;
+    /* color: black; */
 }
 
 body {
@@ -32,7 +33,6 @@ body {
 h1 {
     font-weight: lighter;
     margin-bottom: 2em;
-    /* font-size: clamp(1em, 5rem, 4rem); */
 }
 
 h3 {
@@ -46,8 +46,8 @@ strong {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px 0;
+    grid-template-columns: 1fr 3fr;
+    gap: 100px 0;
     grid-auto-rows: auto;
 }
 
@@ -78,7 +78,7 @@ strong {
 .exp-container {
     /* background-color: aqua; */
     margin-left: 10%;
-    margin-right: 30%;
+    margin-right: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,13 +88,13 @@ strong {
 .skills-container {
     /* background-color: plum; */
     margin-left: 10%;
-    margin-right: 30%;
+    margin-right: 25%;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     font-size: larger;
-    flex-basis: 2;
     max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .skills-languages, .skills-frameworks, .skills-tools {
@@ -134,6 +134,7 @@ ul {
     text-decoration: none;
     color: inherit;
     letter-spacing: 4px;
+    flex-wrap: wrap;
 }
 
 a {
@@ -149,7 +150,7 @@ a {
 }
 
 .copyright {
-    font-size: large;
+    font-size: small;
     text-align: center;
     padding: 100px;
     padding-bottom: 10px;
@@ -159,6 +160,11 @@ a {
     width: 0px;
 }
 
+.github-logo a {
+    font-size: x-small;
+    /* color:  */
+}
+
 .copyright,
 .github-logo {
     display: flex;
@@ -166,4 +172,44 @@ a {
     /* text-align: center; */
     justify-content: center;
     gap: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    /* body {
+        display: none;
+    } */
+
+    .intro {
+        height: 100vh;
+    }
+
+    .grid-container {
+        /* grid-template-columns: 2fr; */
+        /* margin-left: 10%;*/
+        margin: auto auto; 
+        /* gap: 100px; */
+        row-gap: 100px;
+    }
+
+    .exp-container {
+        margin: 0 7%;
+    }
+
+    .skills-container {
+        margin: 0 7%;
+        gap: 0;
+        justify-content: space-between;
+        padding-bottom: 100px;
+    }
+
+    .findme-title h3 {
+        margin-left: 15%;
+    }
+
+    .findme-container {
+        margin: 0 15% 0 7%;
+        gap: 0;
+        justify-content: space-between;
+    }
+    
 }
