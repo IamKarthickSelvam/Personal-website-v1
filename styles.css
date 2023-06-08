@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;700&display=swap');
 
 * {
     font-family: 'Epilogue', sans-serif;
@@ -19,12 +19,64 @@
     /* margin-top: 10%; */
     padding: 10% 20% 0% 20%;
     font-size: xx-large;
+    font-weight: 200;
 }
 
 .intro-content p {
-    font-weight: normal;
-    /* color: black; */
+    font-weight: 400;
+    padding-bottom: 30px;
 }
+
+.intro-content a, .full-stack {
+    font-size: inherit;
+    color: #F2CA53;
+}
+
+.getintouch {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0.2em;
+  }
+
+.getintouch a {
+    color: white;
+}
+  
+.getintouch::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    border-bottom: 2px solid #F2CA53;
+}
+  
+.resume {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0.2em;
+}
+  
+.resume::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    border-bottom: 2px solid #F2CA53;
+}
+
+.getintouch:hover::after {
+    width: 100%;
+}
+
+.getintouch, .resume {
+    display: inline-flex;
+}
+
+/* .intro-content a:hover {
+    margin-bottom: ;
+} */
 
 body {
     color: white;
@@ -97,7 +149,9 @@ strong {
     flex-wrap: wrap;
 }
 
-.skills-languages, .skills-frameworks, .skills-tools {
+.skills-languages,
+.skills-frameworks,
+.skills-tools {
     letter-spacing: 4px;
 }
 
@@ -145,7 +199,10 @@ a {
     text-align: end;
 }
 
-.email, .linkedin, .github, a{
+.email,
+.linkedin,
+.github,
+a {
     font-size: large;
 }
 
@@ -183,10 +240,14 @@ a {
         height: 100vh;
     }
 
+    .intro-content {
+        font-size: x-large;
+    }
+
     .grid-container {
         /* grid-template-columns: 2fr; */
         /* margin-left: 10%;*/
-        margin: auto auto; 
+        margin: auto auto;
         /* gap: 100px; */
         row-gap: 100px;
     }
@@ -210,6 +271,97 @@ a {
         margin: 0 15% 0 7%;
         gap: 0;
         justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    /* body {
+        display: none;
+    } */
+
+    .intro {
+        height: 100vh;
+    }
+
+    .intro-content {
+        font-size: 1.2rem;
+    }
+
+    .getintouch, .resume {
+        display: inline-flex;
+        overflow-x: visible;
+    }
+
+    .grid-container {
+        grid-template-columns: 2fr;
+        row-gap: 40px;
+    }
+
+    .exp-title {
+        text-align: center;
+    }
+
+    /* .exp-company h3 ,.exp-role, .exp-time {
+        font-size: medium;
+    } */
+
+    .exp-company, .exp-time, .exp-role {
+        display: block;
+        align-self: center;
+    }
+
+    .exp-container {
+        align-self: center;
+        padding-bottom: 50px;
+    }
+
+    .skills-title {
+        text-align: center;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+        row-gap: 30px;
+        padding-bottom: 50px;
+    }
+
+    .RHS-grid {
+        display: block;
+        text-align: center;
+    }
+
+    .skills-tools {
+        grid-column: 1 / span 2;
+    }
+
+    .findme-title h3 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .findme-container {
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .copyright {
+        font-size: xx-small;
+        padding: 50px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .intro {
+        height: 100vh;
+    }
+
+    .intro-content {
+        font-size: medium;
     }
     
 }
