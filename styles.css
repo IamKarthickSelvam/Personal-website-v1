@@ -38,7 +38,7 @@
     margin-bottom: 0.2em;
   }
 
-.getintouch a {
+.getintouch a, .resume a {
     color: white;
 }
   
@@ -286,6 +286,7 @@ a {
 
     .intro-content {
         font-size: 1.2rem;
+        padding: 20% 15% 0%;
     }
 
     .getintouch, .resume {
