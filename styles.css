@@ -122,6 +122,10 @@ strong {
     font-size: large;
 }
 
+.exp-time a {
+    color: #F2CA53;
+}
+
 .exp-role {
     padding-bottom: 20px;
     font-size: large;
@@ -229,6 +233,31 @@ a {
     /* text-align: center; */
     justify-content: center;
     gap: 50px;
+}
+
+.custom-button {
+    display: inline-block;
+    color: #fff;
+}
+
+.custom-button:hover {
+    cursor: pointer;
+}
+
+.custom-button:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #F2CA53;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.custom-button:hover:after {
+    transform: scaleX(1);
+}
+
+.border-color {
+    border-color: #F2CA53 !important;
 }
 
 @media screen and (max-width: 800px) {
